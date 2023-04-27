@@ -1,0 +1,21 @@
+.row{
+    padding: 55px;
+    padding-top: 73px;
+}
+div{
+    background-color: #020c1b;
+    align-items: center;
+}
+h2,p{
+    color: #4672fe;
+}
+.first-div p {
+    font-size: 30px;
+}
+.second-div p {
+    text-align: justify;
+}
+#nombre{
+    font-family: cursive;
+    font-weight: bold;
+}

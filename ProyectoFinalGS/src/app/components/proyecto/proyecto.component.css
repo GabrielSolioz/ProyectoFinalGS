@@ -1,0 +1,24 @@
+.row{
+    padding: 55px;
+}
+div{
+    background-color: #020c1b;
+}
+h2,h3{
+    color: #4672fe;
+    font-family: cursive;
+}
+p{
+    color: #4672fe;
+}
+.contenedor{
+    width: auto;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+.imagen{
+    box-shadow: 32px 0 0 red,
+    64px 0 0 gold;
+}
