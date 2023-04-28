@@ -18,10 +18,14 @@ img{
     border-width: medium;
 }
 
-/*--- Para la vista de celular ---*/
+
 @media (max-width: 620px){
     .redes img{
         margin: 2px;
-        width: 35px;
+        width: 25px;
+    }
+    .btn{
+        margin: 2px;
+        padding: 2px 2px;
     }
 }
