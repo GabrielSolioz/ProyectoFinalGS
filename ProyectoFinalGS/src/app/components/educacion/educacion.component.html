@@ -1,31 +1,24 @@
 <div class="row">
-    <h2>Educacion</h2>
+    <h1>Educacion:</h1>
+    <button type="button" class="btn btn-warning col-lg-3" routerLink="/nuevaedu" *ngIf="isLogged"> Nueva Educacion</button>
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li><h2>Educacion 1:</h2><h3>1 año</h3></li>
-            <p>
-                Pasantia de 1 año realizada en el Gabinete de Informatica Forense del Ministerio Publico Fiscal de la provincia de Entre Rios.
-            </p>
-        </ul>
-        <ul>
-            <li><h2>Educacion 2:</h2><h3>1 año</h3></li>
-            <p>
-                Pasantia de 1 año realizada en el Gabinete de Informatica Forense del Ministerio Publico Fiscal de la provincia de Entre Rios.
-            </p>
-        </ul>
-        <ul>
-            <li><h2>Educacion 3:</h2><h3>1 año</h3></li>
-            <p>
-                Pasantia de 1 año realizada en el Gabinete de Informatica Forense del Ministerio Publico Fiscal de la provincia de Entre Rios.
-            </p>
-        </ul>
-        <ul>
-            <li><h2>Educacion 4</h2><h3>1 año</h3></li>
-            <p>
-                Pasantia de 1 año realizada en el Gabinete de Informatica Forense del Ministerio Publico Fiscal de la provincia de Entre Rios.
-            </p>
-        </ul>
-        
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let educ of educacion">
+                    <td>{{educ.nombreE}}</td>
+                    <td>{{educ.periodoE}}</td>
+                    <td>{{educ.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light" routerLink="/editedu/{{educ.id}}">
+                        <i class="bi bi-pencil-square"></i>Editar</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-danger"(click)="delete(educ.id)">
+                        <i class="bi bi-trash"></i>Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>

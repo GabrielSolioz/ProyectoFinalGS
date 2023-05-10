@@ -29,18 +29,18 @@ section{ padding:30px 20%;}
     }
 }
 
-.banner h2{
+.banner h1{
     white-space: nowrap;
     margin: 0 0 4px;
     font-size: 40px;
     color:#4672fe;
-    font-family: cursive;
+    font-family: Raleway;
     font-weight: bold;
 }
 
-.banner h3{
+.banner h2{
     color: #4672fe;
-    font-family: cursive;
+    font-family: Roboto Mono;
     font-weight: bold;
 }
 

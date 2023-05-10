@@ -1,13 +1,24 @@
 <div class="row">
-    <h2>Experiencia</h2>
+    <h1>Experiencia Laboral:</h1>
+    <button type="button" class="btn btn-warning col-lg-3" routerLink="/nuevaexp" *ngIf="isLogged"> Nueva experiencia</button>
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li><h2>Trabajo 1</h2><h3>1 año</h3></li>
-            <p>
-                Pasantia de 1 año realizada en el Gabinete de Informatica Forense del Ministerio Publico Fiscal de la provincia de Entre Rios.
-            </p>
-        </ul>
-
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of exp">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.periodoE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-light"routerLink="editexp/{{Experiencia.id}}">
+                        <i class="bi bi-pencil-square"></i>Editar</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-outline-danger"(click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash"></i>Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
