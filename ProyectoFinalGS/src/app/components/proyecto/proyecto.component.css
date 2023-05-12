@@ -1,30 +1,54 @@
-.row{
+.row {
     padding: 55px;
 }
-div{
+
+div {
     background-color: #020c1b;
 }
-h2,h3{
-    color: #4672fe;
+
+h1,
+h2 {
+    color: rgb(255, 215, 0);
     font-family: cursive;
 }
-p{
+
+p {
     color: #4672fe;
-}
-.contenedor{
-    width: auto;
-}
-.parte1, .parte2{
-    display: inline-block;
+    font-family: 'Nobile', sans-serif;
     text-align: justify;
 }
-.imagen{
-    box-shadow: 32px 0 0 red,
-    64px 0 0 gold;
+
+h4 {
+    color: rgb(255, 215, 0);
+    font-family: 'Nobile', sans-serif;
 }
-@media (max-width : 720px){
-    .imagen{
+
+.contenedor {
+    width: auto;
+}
+
+.parte1,
+.parte2 {
+    display: inline-block;
+}
+
+.imagen {
+    box-shadow: 32px 0 0 red,
+        64px 0 0 gold;
+}
+
+@media (max-width : 720px) {
+    .imagen {
         box-shadow: 16px 0 0 red,
-        34px 0 0 gold;
+            34px 0 0 gold;
+    }
+    h4{
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+    #imagenp{
+        width: 280px;
     }
 }

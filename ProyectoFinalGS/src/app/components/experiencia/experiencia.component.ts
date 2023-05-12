@@ -28,7 +28,6 @@ export class ExperienciaComponent {
     this.sExperiencia.lista().subscribe(
       data => {
         this.exp = data;
-        console.log(this.exp)
       });
   }
   delete(id?: number): void {

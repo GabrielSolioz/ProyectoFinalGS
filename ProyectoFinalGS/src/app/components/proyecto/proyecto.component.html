@@ -1,16 +1,31 @@
 <div class="row">
-    <h2>Proyectos realizados:</h2>
-    <div class="contenedor">
+    <h1>Proyectos realizados:</h1>
+    <button type="button" class="btn btn-warning w-100 my-2" routerLink="/newproyecto" *ngIf="isLogged">
+        Agregar proyecto
+    </button>
+    <div class="container" *ngFor="let proy of proyecto">
         <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h3>Portfolio</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas consequuntur error totam culpa sequi nisi
-                earum fuga inventore beatae iusto ea obcaecati, expedita temporibus enim animi tempore repudiandae
-                molestias
-                impedit.
+            <h2>{{proy.nombre}}:</h2>
+            <h4>Url: <a href="{{proy.url}}">{{proy.url}}</a></h4>
+            <p>
+                {{proy.descripcion}}
             </p>
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="../../../assets/images/argentinaprograma.jpg" class="img-fluid imagen">
+            <img src="{{proy.img}}" class="img-fluid imagen" id="imagenp">
+        </div>
+        <div class="row" *ngIf="isLogged">
+            <div class="col text-center">
+                <button class="btn btn-warning w-50" routerLink="editproyecto/{{proy.id}}">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-danger w-50" (click)="delete(proy.id)">
+                    <i class="bi bi-x-octagon"></i>
+                </button>
+            </div>
         </div>
     </div>
+
 </div>

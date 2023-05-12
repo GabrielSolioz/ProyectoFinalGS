@@ -5,8 +5,8 @@ div{
     background-color: #020c1b;
     align-items: center;
 }
-h2,h3{
-    color: #4672fe;
+h1{
+    color: rgb(255, 215, 0);
     font-family: cursive;
 }
 p{

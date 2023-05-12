@@ -1,16 +1,33 @@
-.row{
+.row {
     padding: 55px;
 }
-div{
+
+div {
     background-color: #020c1b;
     align-items: center;
 }
-h1{
+
+h1 {
     color: rgb(255, 215, 0);
-    font-family: Raleway;
-}
-p,td{
-    color: #4672fe;
-    text-align: justify;
     font-family: cursive;
 }
+
+p,
+td {
+    color: #4672fe;
+    text-align: justify;
+    font-family: 'Nobile', sans-serif;
+}
+
+@media (max-width: 620px) {
+    button span {
+        display: none;
+    }
+
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }

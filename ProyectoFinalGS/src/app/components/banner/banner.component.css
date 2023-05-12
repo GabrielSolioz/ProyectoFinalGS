@@ -33,14 +33,14 @@ section{ padding:30px 20%;}
     white-space: nowrap;
     margin: 0 0 4px;
     font-size: 40px;
-    color:#4672fe;
-    font-family: Raleway;
+    color: rgb(255, 215, 0);
+    font-family: 'Corben', cursive;
     font-weight: bold;
 }
 
 .banner h2{
     color: #4672fe;
-    font-family: Roboto Mono;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 

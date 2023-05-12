@@ -1,6 +1,6 @@
-<div class="container vh-100 d-flex flex-column justify-content-center align-items-between" *ngIf="educacion">
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-between mw-100" *ngIf="educacion">
     <div class="row">
-        <div>
+        <div class="table-responsive">
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre de la institucion: </label>

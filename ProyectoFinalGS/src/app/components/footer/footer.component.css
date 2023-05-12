@@ -49,6 +49,12 @@ footer .wave.wave4{
     animation-delay: -5s;
     bottom: 20px;
 }
+@media (max-width : 620px){
+    p{
+        padding-top: 10px;
+    }
+}
+
 @keyframes animate{
     0%{
         background-position-x: 0;

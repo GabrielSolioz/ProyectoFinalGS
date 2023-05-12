@@ -1,0 +1,32 @@
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-between mw-100" *ngIf="persona">
+    <div class="row">
+        <div class="table-responsive">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la persona: </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group ">
+                    <label for="apellido">Apellido de la persona: </label>
+                    <input type="text" class="form-control" id="apellido" name="apellido"
+                        [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group ">
+                    <label for="descripcion">Descripcion de la persona: </label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="form-group ">
+                    <label for="imagen">Imagen: </label>
+                    <input type="file" class="form-control" id="imagen" name="imagen" (change)="uploadImage($event)" accept=".jpg .jpeg .png" no required>
+                    <button class="btn btn-warning">
+                        Actualizar
+                    </button>
+                </div>
+                <div class="imagen pt-2 d-flex justify-content-center">
+                    <img [src]="imageS.url" alt="imagen" width="100px">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

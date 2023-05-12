@@ -1,15 +1,14 @@
 <div class="row">
+    <button type="button" class="btn btn-warning w-100" routerLink="/editacercade/1" *ngIf="isLogged"> Editar persona</button>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 first-div">
-        <p id="nombre">{{Persona.nombre}} {{Persona.apellido}}</p>
-        <p id="segundop">Full Stack Developer Jr</p>
+        <h1 id="nombre">{{persona.nombre}} {{persona.apellido}}</h1>
+        <h1 id="segundop">Full Stack Developer Jr</h1>
     </div>
     <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 second-div">
         <span>
             <h2>Acerca de mi:</h2>
-            <p>Soy un estudiante de Analista en Sistemas y Licenciatura en Sistemas. Mi pasión por la tecnología y el
-                deseo de aprender constantemente me han llevado a realizar una pasantía y varios cursos para mejorar mis
-                habilidades y conocimientos. Estoy emocionado de seguir creciendo en mi carrera y enfrentar nuevos
-                desafíos.
+            <p>
+                {{persona.descripcion}}
             </p>
         </span>
     </div>
