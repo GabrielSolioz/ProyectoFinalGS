@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProyectoService {
-  URL = environment.URl + 'proyecto/';
+  URL = environment.URl + '/proyecto/';
  
   constructor(private httpClient: HttpClient) {
   

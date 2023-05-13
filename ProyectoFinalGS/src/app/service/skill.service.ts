@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = environment.URl + 'skill/';
+  URL = 'https://backendgs.onrender.com' + '/skill/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skills[]>{

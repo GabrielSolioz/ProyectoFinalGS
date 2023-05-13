@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment.development';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = environment.URl + 'personas/';
+  URL = environment.URl + '/personas/';
 
   constructor(private httpClient:HttpClient) { }
 

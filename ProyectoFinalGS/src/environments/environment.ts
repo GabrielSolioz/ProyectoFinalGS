@@ -10,5 +10,5 @@ export const environment = {
     measurementId: 'G-X899KKV6W3',
   },
     production: false,
-    URl:"http://localhost:8080/"
+    URl:"http://localhost:8080/",
 };
